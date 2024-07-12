@@ -97,7 +97,7 @@ const { className, styles } = css.resolve`
 
 const GeometricBackground: React.FC<GeometricBackgroundProps> = ({ width, height }) => {
   return (
-    <div className="geo-background" style={{ width: `${width}px`, height: `${height}px`, borderRadius: '1rem' }}>
+    <div className="geo-background" style={{ width: `100%`, height: `${height}px`, borderRadius: '1rem' }}>
       <div className={`${className} geo-bg-circle geo-bg-circle1`}></div>
       <div className={`${className} geo-bg-circle geo-bg-circle2`}></div>
       <div className={`${className} geo-bg-circle geo-bg-circle3`}></div>

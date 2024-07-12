@@ -152,14 +152,18 @@ const SpaceBackground: React.FC<SpaceBackgroundProps> = ({ width, height }) => {
   }, []);
 
   return (
-    <div ref={containerRef} style={{
-      width: `${width}px`,
-      height: `${height}px`,
-      position: 'relative',
-      overflow: 'hidden',
-      background: 'linear-gradient(to bottom, #581c87, #000000)',
-      borderRadius: '1rem'
-    }}>
+    <div ref={containerRef}
+      // style={{
+      //   width: `${width}px`,
+      //   height: `${height}px`,
+      //   display: 'flex',
+      //   position: 'relative',
+      //   overflow: 'hidden',
+      //   background: 'linear-gradient(to bottom, #581c87, #000000)',
+      //   borderRadius: '1rem'
+      // }} 
+      className={`w-full h-[600px] relative overflow-hidden bg-gradient-to-b from-purple-900 to-black rounded-lg`}
+    >
       <div className="absolute inset-0 flex flex-col items-center justify-center text-white text-center rounded-2xl">
         <h1 className="text-4xl font-bold mb-4">The API Security Framework</h1>
         <p className="mb-6">Our landing page template works on all devices, so you only have to set it up once, and get beautiful results forever.</p>

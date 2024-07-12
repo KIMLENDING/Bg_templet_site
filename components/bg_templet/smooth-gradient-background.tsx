@@ -8,7 +8,7 @@ interface SmoothGradientBackgroundProps {
 
 const SmoothGradientBackground: React.FC<SmoothGradientBackgroundProps> = ({ width, height }) => {
   return (
-    <div className="gradient-background" style={{ width: `${width}px`, height: `${height}px`, borderRadius: '1rem' }}>
+    <div className="gradient-background" style={{ width: `100%`, height: `${height}px`, borderRadius: '1rem' }}>
       <div className="gradient-layer"></div>
       <div className="content">
         <h1 className="text-4xl font-bold mb-4">The API Security Framework</h1>

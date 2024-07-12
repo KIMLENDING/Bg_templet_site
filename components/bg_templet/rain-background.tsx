@@ -107,7 +107,7 @@ const RainBackground: React.FC<RainBackgroundProps> = ({ width, height }) => {
   }, []);
 
   return (
-    <div style={{ position: 'relative', width: `${width}px`, height: `${height}px` }}>
+    <div style={{ position: 'relative', width: `100%`, height: `${height}px` }}>
       <canvas
         ref={canvasRef}
         style={{

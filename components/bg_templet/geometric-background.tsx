@@ -85,7 +85,7 @@ const GeometricBackground: React.FC<GeometricBackgroundProps> = ({ width, height
   }, [width, height]);
 
   return (
-    <div style={{ position: 'relative', width: `${width}px`, height: `${height}px`, borderRadius: '1rem' }}>
+    <div style={{ position: 'relative', width: `100%`, height: `${height}px`, borderRadius: '1rem' }}>
       <canvas
         ref={canvasRef}
         style={{

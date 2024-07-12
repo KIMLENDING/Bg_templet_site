@@ -8,7 +8,7 @@ interface WaveBackgroundProps {
 
 const WaveBackground: React.FC<WaveBackgroundProps> = ({ width, height }) => {
   return (
-    <div style={{ position: 'relative', width: `${width}px`, height: `${height}px`, overflow: 'hidden', borderRadius: '1rem' }}>
+    <div style={{ position: 'relative', width: `100%`, height: `${height}px`, overflow: 'hidden', borderRadius: '1rem' }}>
       <svg
         className="waves"
         xmlns="http://www.w3.org/2000/svg"

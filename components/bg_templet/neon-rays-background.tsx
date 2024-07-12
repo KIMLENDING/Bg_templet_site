@@ -20,7 +20,7 @@ const NeonRaysBackground: React.FC<NeonRaysBackgroundProps> = ({ width, height }
   }, [rayCount]);
 
   return (
-    <div style={{ width: `${width}px`, height: `${height}px`, overflow: 'hidden', background: '#000', position: 'relative', borderRadius: '1rem' }}>
+    <div style={{ width: `100%`, height: `${height}px`, overflow: 'hidden', background: '#000', position: 'relative', borderRadius: '1rem' }}>
       <svg
         width="100%"
         height="100%"

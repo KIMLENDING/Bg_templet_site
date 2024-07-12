@@ -92,7 +92,7 @@ const ParticleBackground: React.FC<ParticleBackgroundProps> = ({ width, height }
   }, [width, height]);
 
   return (
-    <div style={{ position: 'relative', width: `${width}px`, height: `${height}px` }}>
+    <div style={{ position: 'relative', width: `100%`, height: `${height}px` }}>
       <canvas
         ref={canvasRef}
         style={{
@@ -116,7 +116,7 @@ const ParticleBackground: React.FC<ParticleBackgroundProps> = ({ width, height }
         color: 'white',
         textAlign: 'center'
       }}>
-        <h1 className="text-4xl font-bold mb-4">The API Security Framework</h1>
+        <h1 className="text-4xl font-bold mb-4 ">The API Security Framework</h1>
         <p className="mb-6">Our landing page template works on all devices, so you only have to set it up once, and get beautiful results forever.</p>
         <div className="space-x-4">
           <Link href="/dashboard" className="px-6 py-2 bg-white text-purple-600 rounded-full hover:bg-opacity-90 transition-colors">

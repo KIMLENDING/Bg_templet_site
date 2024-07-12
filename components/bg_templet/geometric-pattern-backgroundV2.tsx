@@ -43,7 +43,7 @@ const GeometricPatternBackgroundv2: React.FC<GeometricPatternBackgroundv2Props> 
   }, [patternSize]);
 
   return (
-    <div style={{ position: 'relative', width: `${width}px`, height: `${height}px`, overflow: 'hidden', borderRadius: '1rem' }}>
+    <div style={{ position: 'relative', width: `100%`, height: `${height}px`, overflow: 'hidden', borderRadius: '1rem' }}>
       <svg
         width="100%"
         height="100%"

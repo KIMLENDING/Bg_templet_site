@@ -8,7 +8,7 @@ interface WavyGradientBackgroundProps {
 
 const WavyGradientBackground: React.FC<WavyGradientBackgroundProps> = ({ width, height }) => {
   return (
-    <div className="wavy-background" style={{ width: `${width}px`, height: `${height}px`, borderRadius: '1rem' }}>
+    <div className="wavy-background" style={{ width: `100%`, height: `${height}px`, borderRadius: '1rem' }}>
       <div className="wave-container">
         <div className="wave wave1"></div>
         <div className="wave wave2"></div>
