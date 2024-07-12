@@ -2,17 +2,23 @@
   "name": "my-app",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://KIMLENDING.github.io/Bg_templet_site/",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "export": "next export",
+    "deploy": "echo > out/.nojekyll && gh-pages -d out --dotfiles",
     "start": "next start",
+    "predeploy": "npm run build",
     "lint": "next lint"
   },
   "dependencies": {
     "@heroicons/react": "^2.1.5",
+    "@netlify/plugin-nextjs": "^5.5.1",
     "@nextui-org/react": "^2.4.2",
     "@types/react-copy-to-clipboard": "^5.0.7",
     "framer-motion": "^11.3.2",
+    "gh-pages": "^6.1.1",
     "next": "14.2.4",
     "react": "^18",
     "react-copy-to-clipboard": "^5.1.0",
