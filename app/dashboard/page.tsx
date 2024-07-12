@@ -12,7 +12,7 @@ const Page: React.FC = () => {
     const [showCode, setShowCode] = useState(true);
 
     return (
-        <div className="container mx-auto px-4">
+        <div className="container mx-auto px-4  ">
             <div className='flex flex-col gap-8'>
                 {showCode ?
                     <CombinedBackgrounds bg={bg} /> : <CopyableCode code={code} />}
